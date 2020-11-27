@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha '**/*.test.js' "
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\""
   },
   "keywords": [],
   "author": "",
@@ -15,5 +15,8 @@
     "mocha": "^8.2.1",
     "nock": "^13.0.5",
     "supertest": "^6.0.1"
+  },
+  "devDependencies": {
+    "tap": "^14.11.0"
   }
 }
